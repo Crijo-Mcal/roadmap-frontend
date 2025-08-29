@@ -4,8 +4,8 @@ Beguinner:
 
 Intermadiate:
 
-https://roadmap.sh/projects/custom-dropdown
-
-https://roadmap.sh/projects/task-tracker-js
+1: https://roadmap.sh/projects/custom-dropdown
+2: https://roadmap.sh/projects/task-tracker-js
+3: https://roadmap.sh/projects/github-random-repo
 
 Advanced:
