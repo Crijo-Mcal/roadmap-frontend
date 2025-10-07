@@ -1,0 +1,169 @@
+
+/* Container styling: input section */
+.container {
+  width: 25%;
+  height: 7rem;
+  padding: 1rem;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+/*___________Title inside container____________ */
+.container .title_container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* TiTLE */
+.title_container .qurry {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.title_container h2 {
+  font-size: 1rem;
+}
+
+/* INPUT */
+.container .input_container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .input_container select {
+  width: 90%;
+  height: 90%;
+  padding-left: 0.5rem;
+}
+
+.input_container .input_value #value op {
+  width: 95%;
+  height: 70%;
+  border-radius: 17px;
+  padding: 0 0.5rem;
+  background-color: rgb(255, 255, 255);
+  border: 0.2rem solid black;
+}
+
+/*___________Result container styling ____________*/
+.result_container {
+  width: 25%;
+  min-height: 10rem;
+  padding: 1rem;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.result_container h2 {
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: start;
+}
+
+.result_container p {
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  overflow-wrap: break-word;
+  text-align: start;
+}
+
+/* Mini info section (like stars, forks, etc.) */
+.mini_info {
+  width: 100%;
+  height: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini_info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mini_info div img {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini_info div .circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 12px;
+  background-color: rgb(255, 187, 0);
+}
+
+/*___________Button container____________*/
+.button_container {
+  width: 25%;
+  height: 2rem;
+}
+
+.refresh {
+  width: 100%;
+  min-height: 100%;
+  padding: 1rem;
+  border-radius: 13px;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.refresh:hover {
+  background-color: rgb(163, 163, 163);
+  color: black;
+}
+
+.retry {
+  width: 100%;
+  min-height: 100%;
+  padding: 1rem;
+  border-radius: 13px;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(255, 66, 66);
+}
+
+.retry:hover {
+  background-color: rgb(255, 160, 160);
+  color: black;
+}

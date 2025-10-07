@@ -1,0 +1,28 @@
+/* Reset default padding, margin, and font */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+}
+
+/* Body styling: full viewport height, centered content, gradient background */
+body {
+  left: 0;
+  right: 0;
+  height:auto;
+  gap: 1rem;
+  background: linear-gradient(212deg,
+      rgba(42, 151, 155, 0.86) 0%,
+      rgba(87, 195, 199, 1) 0%,
+      rgba(109, 83, 237, 1) 100%);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

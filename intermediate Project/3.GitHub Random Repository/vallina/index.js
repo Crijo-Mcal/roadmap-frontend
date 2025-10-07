@@ -48,14 +48,14 @@ async function select_language() {
     // Create an <option> for each language
     for (const element of data) {
       if (element.value != "") {
-        let new_element = document.createElement("option"); 
-        new_element.value = element.value; 
-        new_element.innerHTML = element.value; 
-        select_container.appendChild(new_element); 
+        let new_element = document.createElement("option");
+        new_element.value = element.value;
+        new_element.innerHTML = element.value;
+        select_container.appendChild(new_element);
       }
     }
   } catch (error) {
-    console.error(error); 
+    console.error(error);
   }
 }
 
@@ -84,6 +84,7 @@ async function display_info() {
     // Display refresh button
     button_display("refresh", "Refresh", display_info);
 
+
   } catch (error) {
     console.error(error);
     state("error"); // Show error state
@@ -104,7 +105,7 @@ function info_element(data) {
   p.textContent = data.description; // Repository description
 
   let div = document.createElement("div");
-  div.classList.add("mini_info"); 
+  div.classList.add("mini_info");
   div.innerHTML = `
     <div class="language">
       <div class="circle"></div>
@@ -123,7 +124,7 @@ function info_element(data) {
       <span>${data.open_issues_count}</span>
     </div>`;
 
-  result_container.append(h2, p, div); 
+  result_container.append(h2, p, div);
 }
 
 /* Function to create a button and attach a callback */
@@ -132,10 +133,10 @@ function button_display(class_name, value, callback) {
   button_container.innerHTML = `<button class="${class_name}">${value}</button>`;
 
   let button = document.querySelector(`.${class_name}`);
-  button.addEventListener("click", callback); 
+  button.addEventListener("click", callback);
 }
 
 /* Initial setup */
 state("none"); // Set default UI state
 select_language(); // Populate dropdown
-select_container.addEventListener("change",display_info);
+select_container.addEventListener("change", display_info);
