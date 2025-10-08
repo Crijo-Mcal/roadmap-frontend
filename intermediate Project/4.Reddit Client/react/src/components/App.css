@@ -1,0 +1,145 @@
+header {
+  background-color: #ff4500;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+
+/* Lanes */
+.lanes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.lane {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 280px;
+  padding: 1rem;
+}
+
+.lane-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+}
+
+.lane-header h2 {
+  font-size: 1rem;
+  color: #ff4500;
+}
+
+.lane-menu .btn {
+  background: #eee;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.lane-menu .btn:hover {
+  background: #ddd;
+}
+
+.posts {
+  list-style: none;
+}
+
+.posts li {
+  padding: .3rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.votes {
+  color: #ff4500;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Add subreddit button */
+.add-lane {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+#addBtn {
+  font-size: 2rem;
+  display: flex;
+  padding-bottom:4px ;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background: #ff4500;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#addBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-content button {
+  background: #ff4500;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
